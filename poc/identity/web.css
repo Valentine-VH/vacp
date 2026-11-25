@@ -1,0 +1,11 @@
+* { box-sizing: border-box }
+body { margin: 0; background: #f4f6fb; color: #172542; font: 16px system-ui }
+main { max-width: 760px; margin: 4rem auto; padding: 0 1rem }
+header { font-weight: 700; color: #3653a4 }
+section { background: white; border: 1px solid #dde3ef; padding: 1.2rem; border-radius: 12px; margin: 1rem 0 }
+h2 { margin: 0 }
+form { display: flex; flex-wrap: wrap; align-items: end; gap: .7rem }
+input, button { padding: .65rem; border-radius: 6px; font: inherit }
+input { display: block; max-width: 100%; border: 1px solid #abb7cb }
+button { border: 0; background: #3653a4; color: white; cursor: pointer }
+button:disabled { opacity: .55 }

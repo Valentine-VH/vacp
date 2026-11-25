@@ -1,0 +1,3 @@
+- insert:
+    - id: vacp-account
+      name: '@vacp/plugin-dsh'

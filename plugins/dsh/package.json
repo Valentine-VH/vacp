@@ -1,0 +1,32 @@
+{
+  "name": "@vacp/plugin-dsh",
+  "version": "0.4.14",
+  "private": true,
+  "type": "module",
+  "description": "Sign in to VACP and view your workspaces in DeepSeek Harness.",
+  "exports": {
+    ".": "./host.js",
+    "./client": "./client.js",
+    "./account-client": "./account-client.js"
+  },
+  "files": ["host.js", "client.js", "account-client.js", "models.js", "remote-conversations.js", "plugin-update.js", "cordis.patch.yml"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    },
+    "meta": {
+      "title": "VACP",
+      "description": "登录 VACP 并查看账号可用的工作空间。"
+    }
+  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}

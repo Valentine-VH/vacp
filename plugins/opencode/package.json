@@ -1,0 +1,13 @@
+{
+  "name": "@vacp/plugin-opencode",
+  "version": "0.1.2",
+  "private": true,
+  "type": "module",
+  "description": "Browse and download the VACP plugin repository from OpenCode.",
+  "exports": "./index.js",
+  "bin": {"vacp-opencode-plugins":"./cli.js"},
+  "files": ["index.js","repository.js","cli.js","README.md"],
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}

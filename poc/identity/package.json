@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "api": "node server.mjs",
+    "build": "vite build",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "fastify": "5",
+    "react": "19",
+    "react-dom": "19",
+    "vite": "7",
+    "zod": "4"
+  }
+}

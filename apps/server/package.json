@@ -1,0 +1,32 @@
+{
+  "name": "@vacp/server",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11",
+    "@nestjs/core": "^11",
+    "@nestjs/platform-fastify": "^11",
+    "ipaddr.js": "^2.5.0",
+    "pg": "^8",
+    "reflect-metadata": "^0.2",
+    "rxjs": "^7",
+    "undici": "^7.30.2",
+    "ws": "^8.23.0",
+    "yauzl": "^3.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "@types/pg": "^8",
+    "@types/ws": "^8.18.2",
+    "@types/yauzl": "^3.4.0",
+    "tsx": "^4",
+    "typescript": "~5.9"
+  }
+}

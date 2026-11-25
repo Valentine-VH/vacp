@@ -1,0 +1,8 @@
+.dsh-client-select {
+  flex: 1 1 220px;
+  max-width: 360px;
+}
+
+.dsh-conversation-status {
+  padding-inline: 2px;
+}

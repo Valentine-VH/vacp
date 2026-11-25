@@ -1,0 +1,25 @@
+{
+  "name": "@vacp/web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5176 --strictPort",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ant-design/x": "2.10.0",
+    "@ant-design/x-markdown": "2.10.0",
+    "antd": "^6",
+    "react": "^19",
+    "react-dom": "^19"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^5",
+    "typescript": "~5.9",
+    "vite": "^7"
+  }
+}

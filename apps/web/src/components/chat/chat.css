@@ -1,0 +1,88 @@
+.vacp-chat-transcript {
+  height: clamp(240px, 41vh, 540px);
+  padding: 16px;
+  background: #fafbfe;
+  border: 1px solid var(--ant-color-border-secondary, #e6eaf3);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.vacp-chat-empty {
+  display: grid;
+  height: 100%;
+  place-items: center;
+}
+
+.vacp-chat-avatar {
+  background: #e8eaff;
+  color: #4338ca;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.vacp-chat-user {
+  max-width: 100%;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.vacp-chat-assistant {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.vacp-chat-assistant .x-markdown {
+  background: transparent;
+  color: inherit;
+}
+
+.vacp-chat-assistant .x-markdown > :last-child {
+  margin-bottom: 0;
+}
+
+.vacp-chat-hint {
+  font-size: 12px;
+}
+
+.vacp-chat-layout {
+  display: grid;
+  grid-template-columns: minmax(160px, 220px) minmax(0, 1fr);
+  gap: 16px;
+}
+
+.vacp-chat-conversations {
+  min-width: 0;
+  overflow: auto;
+  max-height: 540px;
+  padding: 10px 8px;
+  border: 1px solid var(--ant-color-border-secondary, #e6eaf3);
+  border-radius: 12px;
+}
+
+.vacp-chat-list-heading {
+  display: block;
+  padding: 4px 8px 8px;
+}
+
+.vacp-chat-main {
+  min-width: 0;
+}
+
+.vacp-chat-empty > * {
+  max-width: 100%;
+}
+
+.vacp-chat-pre {
+  max-width: 100%;
+  overflow: auto;
+}
+
+@media (max-width: 680px) {
+  .vacp-chat-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .vacp-chat-transcript {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,9 @@
+packages:
+  - apps/*
+  - packages/*
+  - plugins/*
+  - connectors/*
+allowBuilds:
+  esbuild: true
+  core-js: false
+  core-js-pure: false

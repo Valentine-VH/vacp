@@ -1,0 +1,11 @@
+.agent-teams { display:grid; grid-template-columns:minmax(215px, 280px) minmax(0, 1fr); gap:14px; align-items:start; }
+.agent-teams-sidebar .ant-list-item { padding-block:4px; }
+.agent-teams-sidebar .ant-btn { justify-content:space-between; }
+.agent-teams-room-name { min-width:0; overflow:hidden; text-overflow:ellipsis; }
+.agent-teams-roster { display:flex; margin-bottom:12px; }
+.agent-teams-messages { max-height:420px; min-height:130px; overflow:auto; margin-bottom:12px; }
+.agent-teams-message { background:#f5f7fc; border-radius:10px; margin-bottom:8px; padding:10px 12px; overflow-wrap:anywhere; }
+.agent-teams-message time { margin-inline-start:8px; color:#53617a; font-size:12px; }
+.agent-teams-message p { margin:5px 0 0; white-space:pre-wrap; }
+.agent-teams-reply { margin-top:10px; padding-inline-start:10px; border-inline-start:2px solid #7776d8; }
+@media (max-width:760px) { .agent-teams { grid-template-columns:minmax(0,1fr); } }
